@@ -15,7 +15,7 @@ const MainPage = observer(() => {
     return (
         <div>
             {loading ? <Loader /> : <BeerList />}
-            <Pagination />
+            {loading ? <Loader /> : <Pagination />}
         </div>
     )
 })

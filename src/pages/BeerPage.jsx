@@ -21,16 +21,19 @@ const BeerPage = observer(() => {
         <div className="beerpage">
             <div className="beerpage__left">
                     <img className="beerpage__img" src={beer?.image_url} alt="" />
+                    <div className="beerpage__tagline">
+                    {beer.tagline}
+                </div>
             </div>
             <div className="beerpage__right">
-                <h3 className="beerpage__name">{beer.name}</h3>
+                <div className='beerpage__title'>
+                    <h3 className="beerpage__name">{beer.name}</h3>
+                    <p>abv: {beer.abv}</p>
+                </div>
                 
                 <p className="beerpage__description">
                     {beer.description}
                 </p>
-                <div className="beerpage__tagline">
-                    {beer.tagline}
-                </div>
                 <p>Goes well:</p>
                 <div className="beerpage__food">
                     {beer.food_pairing?.join(', ')}
