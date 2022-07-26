@@ -14,12 +14,13 @@
 }
 
 .beerpage__left {
-    width: 380px;
+    max-width: 380px;
     height: 380x;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
 .beerpage__img {
     height: 600px;
@@ -30,20 +31,21 @@
 }
 
 .beerpage__right {
-    width: 380px;
+    max-width: 380px;
 }
 
 .beerpage__title {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5px;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 .beerpage__description {
-    margin-bottom: 5px;
+    margin-bottom: 1em;
 }
 
 .beerpage__tagline {
-    margin-top: 7px;
+    margin-top: 1em;
     background-color: #e6e6fa;
     padding-left: 7px;
     padding-right: 7px;
@@ -64,5 +66,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .beerpage__right {
+        margin: 0 5px;
     }
 }
