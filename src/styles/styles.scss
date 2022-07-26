@@ -57,7 +57,7 @@ body {
 .beer {
     margin-top: 20px;
     margin-right: 20px;
-    width: 200px;
+    max-width: 200px;
     height: 350px;
     display: flex;
     flex-wrap: wrap;
@@ -92,4 +92,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 414px) {
+    .beer {
+        max-width: 380px;
+        margin-left: 3em;
+        margin-right: 3em;
+    }
 }
