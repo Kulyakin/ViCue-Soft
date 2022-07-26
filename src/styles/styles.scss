@@ -1,0 +1,70 @@
+@import './variables.scss';
+@import './beerPage.scss';
+@import './ui/loader.scss';
+@import './ui/input.scss';
+@import './ui/button.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: white;
+}
+.container {
+    max-width: 880px;
+    margin: 0 auto;
+}
+.header__h1 {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-top: 1ch;
+}
+
+.header__search-input {
+    display: flex;
+    justify-content: center;
+    margin-top: 1ch;
+}
+
+.beer__img-file {
+    height: 200px;
+    width: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.book__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.beerlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.beer {
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 200px;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+}
+.beer:hover {
+    transform: scale(1.05);
+}
+.pagination {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
