@@ -15,7 +15,9 @@ class Beer {
     startSearch(searchValue) {
         axios
             .get(
-                `https://api.punkapi.com/v2/beers?beer_name=${!searchValue ? 'a' : searchValue}&page=${this.page}&per_page=${this.maxElemens}`
+                `https://api.punkapi.com/v2/beers?beer_name=${
+                    !searchValue ? 'a' : searchValue
+                }&page=${this.page}&per_page=${this.maxElemens}`
             )
             .then((res) => {
                 this.shelfWithBeer = [...res.data]
@@ -28,7 +30,9 @@ class Beer {
         this.page += 1
         axios
             .get(
-                `https://api.punkapi.com/v2/beers?beer_name=${!searchValue ? 'a' : searchValue}&page=${this.page}&per_page=${this.maxElemens}`
+                `https://api.punkapi.com/v2/beers?beer_name=${
+                    !searchValue ? 'a' : searchValue
+                }&page=${this.page}&per_page=${this.maxElemens}`
             )
             .then((res) => {
                 this.nextBeer = [...res.data]

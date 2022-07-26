@@ -15,7 +15,11 @@ const Book = observer(({ beername, description, img, id }) => {
             </div>
             <div className="beer__bottom">
                 <h3 className="beer__bottom-name">{beername.slice(0, 30)}</h3>
-                <div className="beer__bottom-info">{description.length > 140 ? description.slice(0, 140)+ "..." : description}</div>
+                <div className="beer__bottom-info">
+                    {description.length > 140
+                        ? description.slice(0, 140) + '...'
+                        : description}
+                </div>
             </div>
         </div>
     )

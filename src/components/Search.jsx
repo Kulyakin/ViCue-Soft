@@ -15,9 +15,13 @@ const Search = observer(() => {
 
     return (
         <header className="header">
-            <h1 className="header__h1" onClick={() => {
-                navigate('/#')
-                shelfWithBeer.page = 1}}>
+            <h1
+                className="header__h1"
+                onClick={() => {
+                    navigate('/#')
+                    shelfWithBeer.page = 1
+                }}
+            >
                 Search for beer
             </h1>
             <div className="header__search-input">
